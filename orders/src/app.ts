@@ -4,10 +4,10 @@ import { json } from 'body-parser';
 import cookieSession from 'cookie-session';
 import { errorHandler, NotFoundError, currentUser } from '@jwtickets/common';
 
-import { deleteOrderRouter } from '../routes/delete';
-import { newOrderRouter } from '../routes/new';
-import { showOrderRouter } from '../routes/show';
-import { indexOrderRouter } from '../routes/index';
+import { deleteOrderRouter } from '../src/routes/delete';
+import { newOrderRouter } from '../src/routes/new';
+import { showOrderRouter } from '../src/routes/show';
+import { indexOrderRouter } from '../src/routes/index';
 
 const app = express();
 app.set('trust proxy', true);
