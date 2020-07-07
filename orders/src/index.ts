@@ -43,7 +43,7 @@ const start = async () => {
       useCreateIndex: true
     });
 
-    console.log('Connected to MongoDb for tickets');
+    console.log('Connected to MongoDb!');
   } catch (err) {
     console.error(err);
   }
