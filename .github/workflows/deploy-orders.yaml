@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: grep -rl 'us.gcr.io/ticketing-dev-280706' infra | xargs sed -i 's/us.gcr.io\/ticketing-dev-280706/jacobwilson1/g'
       - run: cd orders && docker build -t jacobwilson1/orders .
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
         env:
